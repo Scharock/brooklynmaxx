@@ -4,9 +4,10 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <h1>Image uploader</h1>
-                <div>no files selected</div>
-                <button>Send</button>
+                <div className="container">
+                    <h1>Image uploader</h1>
+                    <div>no files selected</div>
+                </div>
             </div>
         )
     };

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import DragAndDrop from "./components/DragAndDrop";
 
 class App extends Component {
     render() {
@@ -6,7 +7,7 @@ class App extends Component {
             <div className="App">
                 <div className="container">
                     <h1>Image uploader</h1>
-                    <div>no files selected</div>
+                    <DragAndDrop></DragAndDrop>
                 </div>
             </div>
         )

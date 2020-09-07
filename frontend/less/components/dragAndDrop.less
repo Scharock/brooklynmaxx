@@ -1,0 +1,54 @@
+.draganddrop {
+    &--box {
+        background-color: #c8dadf;
+        color: #0f3c4b;
+        font-size: 20px;
+        outline: 2px dashed #92b0b3;
+        outline-offset: -10px;
+        padding: 100px 20px;
+        transition: outline-offset .15s ease-in-out, background-color .15s linear;
+
+        &__uploading,
+        &__error {
+            display: none;
+        }
+
+        &__icon {
+            fill: #92b0b3;
+            height: 80px;
+            display: block;
+            margin-bottom: 40px;
+            width: 100%;
+        }
+
+        &__label {
+            cursor: pointer;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        &__file {
+            height: 0;
+            position: absolute;
+            width: 0;
+        }
+
+        &__submit {
+            background-color: #39bfd3;
+            color: #e5edf1;
+            display: block;
+            margin: 40px auto 0;
+            padding: 8px 16px;
+
+            &:hover {
+                background-color: #0f3c4b;
+            }
+        }
+
+        &.is-dragover {
+            outline-offset: -20px;
+            outline-color: #c8dadf;
+            background-color: #fff;
+        }
+    }
+}
